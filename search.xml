@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>路由与交换</title>
+    <url>/2021/03/27/telnet%E5%92%8Cssh/</url>
+    <content><![CDATA[<h4 id="实验内容项目：telnet和ssh"><a href="#实验内容项目：telnet和ssh" class="headerlink" title="实验内容项目：telnet和ssh"></a>实验内容项目：telnet和ssh</h4><h6 id="一、先搭建一个拓扑结构图："><a href="#一、先搭建一个拓扑结构图：" class="headerlink" title="一、先搭建一个拓扑结构图："></a>一、先搭建一个拓扑结构图：</h6><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327152543.png" style="zoom:80%;" />
+
+<p>搭建好拓扑图后需要配置云端，路由还有交换机的地址。</p>
+<p>云端地址配置（192.165.10.6/24 注意这个地址不能随意改动，我们需要搭建一个回环网址来进行这项操作。）</p>
+<img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327152719.png" style="zoom: 80%;" />
+
+<p>注：在操作下面内容时，为防止出现网段连接不通的问题，我们需要关闭防火墙设置。</p>
+<p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327152917.png"></p>
+<h6 id="二、在AR1里的G0-0-0口配置一个IP（192-165-10-7-24）地址，在SW1里的vlan配置一个IP（192-165-10-8-24）地址，且要将IP地址设在同一网段里。"><a href="#二、在AR1里的G0-0-0口配置一个IP（192-165-10-7-24）地址，在SW1里的vlan配置一个IP（192-165-10-8-24）地址，且要将IP地址设在同一网段里。" class="headerlink" title="二、在AR1里的G0/0/0口配置一个IP（192.165.10.7/24）地址，在SW1里的vlan配置一个IP（192.165.10.8/24）地址，且要将IP地址设在同一网段里。"></a>二、在AR1里的G0/0/0口配置一个IP（192.165.10.7/24）地址，在SW1里的vlan配置一个IP（192.165.10.8/24）地址，且要将IP地址设在同一网段里。</h6><p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153204.png"></p>
+<p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153228.png"></p>
+<p>我们在来ping一下，看是否能ping通，ping通就说明这个网段没有问题，他们同属于同一网段内。</p>
+<p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153336.png"></p>
+<h6 id="三、进行TELNET登入设置。"><a href="#三、进行TELNET登入设置。" class="headerlink" title="三、进行TELNET登入设置。"></a>三、进行TELNET登入设置。</h6><p>需要操作的指令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[SW1]telnet server enable （开启telnet）</span><br><span class="line">[SW1]user-interface vty 0 4（进入虚拟终端接口，配置了5个接口）</span><br><span class="line">[SW1-ui-vty0-4]authentication-mode aaa（认证方式为aaa模式）</span><br><span class="line">[SW1-ui-vty0-4]protocol inbound telnet（允许Telnet协议进入）</span><br><span class="line">[SW1-ui-vty0-4]q（退出）</span><br><span class="line">[SW1]aaa（进入aaa模式）</span><br><span class="line">local-user baigei password cipher 123 privilege level 3（配置账户和密码，并给予账户权限，3就是3级权限）</span><br><span class="line">[SW1-aaa]local-user baigei service-type telnet（baigei账户登录类型为telnet）</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153608.png"></p>
+<p>接着我们进入路由器AR1，并且退出用户视图，对交换机SW1进行telnet登入。</p>
+<p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153702.png"></p>
+<p>到这里，就能看见我们telnet登入成功！</p>
+<h6 id="四、进行SSH登入设置"><a href="#四、进行SSH登入设置" class="headerlink" title="四、进行SSH登入设置"></a>四、进行SSH登入设置</h6><p>需要操作的指令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[AR1]user-interface vty 0 4（进入虚拟终端接口，配置了5个接口）</span><br><span class="line">[AR1-ui-vty0-4]authentication-mode aaa（认证方式为aaa模式）</span><br><span class="line">[AR1-ui-vty0-4]protocol inbound ssh（允许SSH协议进入）</span><br><span class="line">[AR1-ui-vty0-4]q（退出）</span><br><span class="line">[AR1]aaa（进入aaa）</span><br><span class="line">[AR1-aaa]local-user baigei password cipher 123（配置账户和密码）</span><br><span class="line">[AR1-aaa]local-user baigei privilege level 3（给予账户权限，3就是3级权限）</span><br><span class="line">[AR1-aaa]local-user baigei service-type ssh（baigei账户登录类型为SSH）</span><br><span class="line">[AR1]rsa local-key-pair create （生成本地秘钥）</span><br><span class="line">[AR1-aaa]q(退出)</span><br><span class="line">[AR1]stelnet server enable（开启SSH）</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153819.png"></p>
+<p><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153921.png"></p>
+<p>好的，由此我们也看见了通过在交换机SW1中通过SSH登入到路由器AR1就成功了！</p>
+<p>开心！</p>
+]]></content>
+      <tags>
+        <tag>telnet和ssh</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/05/11/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>

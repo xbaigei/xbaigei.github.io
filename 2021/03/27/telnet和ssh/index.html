@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello World - 白给</title>
+  <title>路由与交换 - 白给</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  <meta name="description" content="Welcome to Hexo! This is yo...">
+  <meta name="description" content="实验内容项目：telnet和ssh一、先搭建一个拓扑结...">
   <meta name="author" content="baigei">
   <link rel="icon" href="/images/icons/xjfavicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/xjfavicon-32x32.png" type="image/png" sizes="32x32">
@@ -145,7 +145,7 @@
       
       
     </div>
-    <div class="center">Hello World</div>
+    <div class="center">路由与交换</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -187,31 +187,44 @@
       <div class="col-xl-6"><article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/image-20210326231858004.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">Hello World</h1>
+    <h1 class="head-title">路由与交换</h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>五月 11, 2021</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>三月 27, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>444</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1293</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h4 id="实验内容项目：telnet和ssh"><a href="#实验内容项目：telnet和ssh" class="headerlink" title="实验内容项目：telnet和ssh"></a>实验内容项目：telnet和ssh</h4><h6 id="一、先搭建一个拓扑结构图："><a href="#一、先搭建一个拓扑结构图：" class="headerlink" title="一、先搭建一个拓扑结构图："></a>一、先搭建一个拓扑结构图：</h6><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327152543.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  style="zoom:80%;" />
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>搭建好拓扑图后需要配置云端，路由还有交换机的地址。</p>
+<p>云端地址配置（192.165.10.6/24 注意这个地址不能随意改动，我们需要搭建一个回环网址来进行这项操作。）</p>
+<img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327152719.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  style="zoom: 80%;" />
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>注：在操作下面内容时，为防止出现网段连接不通的问题，我们需要关闭防火墙设置。</p>
+<p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327152917.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<h6 id="二、在AR1里的G0-0-0口配置一个IP（192-165-10-7-24）地址，在SW1里的vlan配置一个IP（192-165-10-8-24）地址，且要将IP地址设在同一网段里。"><a href="#二、在AR1里的G0-0-0口配置一个IP（192-165-10-7-24）地址，在SW1里的vlan配置一个IP（192-165-10-8-24）地址，且要将IP地址设在同一网段里。" class="headerlink" title="二、在AR1里的G0/0/0口配置一个IP（192.165.10.7/24）地址，在SW1里的vlan配置一个IP（192.165.10.8/24）地址，且要将IP地址设在同一网段里。"></a>二、在AR1里的G0/0/0口配置一个IP（192.165.10.7/24）地址，在SW1里的vlan配置一个IP（192.165.10.8/24）地址，且要将IP地址设在同一网段里。</h6><p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153204.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153228.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p>我们在来ping一下，看是否能ping通，ping通就说明这个网段没有问题，他们同属于同一网段内。</p>
+<p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153336.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<h6 id="三、进行TELNET登入设置。"><a href="#三、进行TELNET登入设置。" class="headerlink" title="三、进行TELNET登入设置。"></a>三、进行TELNET登入设置。</h6><p>需要操作的指令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[SW1]telnet server enable （开启telnet）</span><br><span class="line">[SW1]user-interface vty 0 4（进入虚拟终端接口，配置了5个接口）</span><br><span class="line">[SW1-ui-vty0-4]authentication-mode aaa（认证方式为aaa模式）</span><br><span class="line">[SW1-ui-vty0-4]protocol inbound telnet（允许Telnet协议进入）</span><br><span class="line">[SW1-ui-vty0-4]q（退出）</span><br><span class="line">[SW1]aaa（进入aaa模式）</span><br><span class="line">local-user baigei password cipher 123 privilege level 3（配置账户和密码，并给予账户权限，3就是3级权限）</span><br><span class="line">[SW1-aaa]local-user baigei service-type telnet（baigei账户登录类型为telnet）</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153608.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p>接着我们进入路由器AR1，并且退出用户视图，对交换机SW1进行telnet登入。</p>
+<p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153702.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p>到这里，就能看见我们telnet登入成功！</p>
+<h6 id="四、进行SSH登入设置"><a href="#四、进行SSH登入设置" class="headerlink" title="四、进行SSH登入设置"></a>四、进行SSH登入设置</h6><p>需要操作的指令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[AR1]user-interface vty 0 4（进入虚拟终端接口，配置了5个接口）</span><br><span class="line">[AR1-ui-vty0-4]authentication-mode aaa（认证方式为aaa模式）</span><br><span class="line">[AR1-ui-vty0-4]protocol inbound ssh（允许SSH协议进入）</span><br><span class="line">[AR1-ui-vty0-4]q（退出）</span><br><span class="line">[AR1]aaa（进入aaa）</span><br><span class="line">[AR1-aaa]local-user baigei password cipher 123（配置账户和密码）</span><br><span class="line">[AR1-aaa]local-user baigei privilege level 3（给予账户权限，3就是3级权限）</span><br><span class="line">[AR1-aaa]local-user baigei service-type ssh（baigei账户登录类型为SSH）</span><br><span class="line">[AR1]rsa local-key-pair create （生成本地秘钥）</span><br><span class="line">[AR1-aaa]q(退出)</span><br><span class="line">[AR1]stelnet server enable（开启SSH）</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153819.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p><img   class="lazyload" data-original="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327153921.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" ></p>
+<p>好的，由此我们也看见了通过在交换机SW1中通过SSH登入到路由器AR1就成功了！</p>
+<p>开心！</p>
 
       </section>
       <section class="extra">
@@ -219,7 +232,7 @@
           <ul class="copyright">
   
     <li><strong>本文作者：</strong>baigei</li>
-    <li><strong>本文链接：</strong><a href="http://example.com/2021/05/11/hello-world/index.html" title="http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;05&#x2F;11&#x2F;hello-world&#x2F;index.html">http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;05&#x2F;11&#x2F;hello-world&#x2F;index.html</a></li>
+    <li><strong>本文链接：</strong><a href="http://example.com/2021/03/27/telnet%E5%92%8Cssh/index.html" title="http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;03&#x2F;27&#x2F;telnet%E5%92%8Cssh&#x2F;index.html">http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;03&#x2F;27&#x2F;telnet%E5%92%8Cssh&#x2F;index.html</a></li>
     <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
 </ul>
@@ -236,10 +249,12 @@
 </section>
         
         
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/telnet%E5%92%8Cssh/" rel="tag">telnet和ssh</a></li></ul> 
+
         
   <nav class="nav">
+    <a href="/2021/05/11/hello-world/"><i class="iconfont iconleft"></i>Hello World</a>
     <a></a>
-    <a href="/2021/03/27/telnet%E5%92%8Cssh/">路由与交换<i class="iconfont iconright"></i></a>
   </nav>
 
       </section>
@@ -252,7 +267,7 @@
           
   <aside class="toc-wrap">
     <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+    
   </aside>
 
         
