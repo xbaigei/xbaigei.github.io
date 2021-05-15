@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/05/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>路由与交换</title>
     <url>/2021/03/27/telnet%E5%92%8Cssh/</url>
     <content><![CDATA[<h4 id="实验内容项目：telnet和ssh"><a href="#实验内容项目：telnet和ssh" class="headerlink" title="实验内容项目：telnet和ssh"></a>实验内容项目：telnet和ssh</h4><h6 id="一、先搭建一个拓扑结构图："><a href="#一、先搭建一个拓扑结构图：" class="headerlink" title="一、先搭建一个拓扑结构图："></a>一、先搭建一个拓扑结构图：</h6><img src="https://gitee.com/xbaigei/raindrop/raw/master/img/20210327152543.png" style="zoom:80%;" />
@@ -35,29 +53,11 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/05/11/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>四阶魔方原理（上）</title>
     <url>/2021/05/15/%E5%9B%9B%E9%98%B6%E9%AD%94%E6%96%B9%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h2 id="魔方拆解复原"><a href="#魔方拆解复原" class="headerlink" title="魔方拆解复原"></a>魔方拆解复原</h2><h3 id="一、魔方拆解"><a href="#一、魔方拆解" class="headerlink" title="一、魔方拆解"></a>一、魔方拆解</h3><h6 id="拆解，就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"><a href="#拆解，就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。" class="headerlink" title="拆解，就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"></a>拆解，就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。</h6><p><img src="https://gitee.com/xbaigei/sea/raw/master/img/1.png"></p>
+    <content><![CDATA[<h2 id="魔方拆解复原"><a href="#魔方拆解复原" class="headerlink" title="魔方拆解复原"></a>魔方拆解复原</h2><h3 id="一、魔方拆解"><a href="#一、魔方拆解" class="headerlink" title="一、魔方拆解"></a>一、魔方拆解</h3><h4 id="拆解"><a href="#拆解" class="headerlink" title="拆解"></a>拆解</h4><h6 id="拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"><a href="#拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。" class="headerlink" title="拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"></a>拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。</h6><p><img  src="C:\Users\白给\Desktop\1.jpg"  ><span class="image-caption">1</span></p>
 <p>在整理一下是吧，完美整洁才是王者：</p>
-<p><img src="https://gitee.com/xbaigei/sea/raw/master/img/2.png"></p>
+<p><img  src="C:\Users\白给\Desktop\2.jpg"  ><span class="image-caption">2</span></p>
 <h2 id="二、魔方复原"><a href="#二、魔方复原" class="headerlink" title="二、魔方复原"></a>二、魔方复原</h2><h5 id="魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s-go"><a href="#魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s-go" class="headerlink" title="魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s go!"></a>魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s go!</h5><h6 id="我将魔方分为核心件、中间件和外部件（短件，中件，长件）"><a href="#我将魔方分为核心件、中间件和外部件（短件，中件，长件）" class="headerlink" title="我将魔方分为核心件、中间件和外部件（短件，中件，长件）"></a>我将魔方分为核心件、中间件和外部件（短件，中件，长件）</h6><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><h6 id="搭建框架"><a href="#搭建框架" class="headerlink" title="搭建框架"></a>搭建框架</h6><p>先找出将核心骨架找到，并找出核心件，拼接方法如下：</p>
 <p><img src="https://gitee.com/xbaigei/sea/raw/master/img/3.png"></p>
 <p><img src="https://gitee.com/xbaigei/sea/raw/master/img/4.png"></p>
