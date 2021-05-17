@@ -35,6 +35,52 @@
       </tags>
   </entry>
   <entry>
+    <title>四阶魔方原理（上）</title>
+    <url>/2021/05/15/%E5%9B%9B%E9%98%B6%E9%AD%94%E6%96%B9%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h1 id="魔方拆解复原"><a href="#魔方拆解复原" class="headerlink" title="魔方拆解复原"></a>魔方拆解复原</h1><h2 id="一、魔方拆解"><a href="#一、魔方拆解" class="headerlink" title="一、魔方拆解"></a>一、魔方拆解</h2><h2 id="拆解"><a href="#拆解" class="headerlink" title="拆解"></a>拆解</h2><h6 id="拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"><a href="#拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。" class="headerlink" title="拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"></a>拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。</h6><p><img src="https://gitee.com/xbaigei/sea/raw/master/img/1.jpg"></p>
+<p>在整理一下是吧，完美整洁才是王者：</p>
+<p><img src="https://gitee.com/xbaigei/sea/raw/master/img/2.jpg"></p>
+<h2 id="二、魔方复原"><a href="#二、魔方复原" class="headerlink" title="二、魔方复原"></a>二、魔方复原</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><h5 id="魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s-go"><a href="#魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s-go" class="headerlink" title="魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s go!"></a>魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s go!</h5><h6 id="我将魔方分为核心件、中间件和外部件（短件，中件，长件）"><a href="#我将魔方分为核心件、中间件和外部件（短件，中件，长件）" class="headerlink" title="我将魔方分为核心件、中间件和外部件（短件，中件，长件）"></a>我将魔方分为核心件、中间件和外部件（短件，中件，长件）</h6><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><h3 id="搭建框架"><a href="#搭建框架" class="headerlink" title="搭建框架"></a>搭建框架</h3><p>先找出将核心骨架找到，并找出核心件，拼接方法如下：</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/3.png" style="zoom:25%;" />
+
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/4.jpg" style="zoom:80%;" />
+
+<p>以三阶魔方为基础的十字架模型来进行复原，所以我们需要进行第一步，用核心件在核心骨架上来拼接出一个十字架来：（注意，注意！！！这里一定要有耐心，因为这个骨架有些会很紧，有些却又很松，我们需要将轻、慢、柔的手法运用到极致，当然有些时候也需要使用一点点小暴力塞进去）</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/6.png" style="zoom:25%;" />
+
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><h3 id="搭建底部，俗称打地基"><a href="#搭建底部，俗称打地基" class="headerlink" title="搭建底部，俗称打地基"></a>搭建底部，俗称打地基</h3><p>在原有的十字骨架上进行累积、拼接并组装出一个地面出来，颜色不用在意，秉承着先搞完在优化的宗纸，这样才会更快更强，理解的更透彻。</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517160726742.png" alt="" style="zoom: 80%;" />
+
+
+
+<p>所以底面拼接就形成了（要注意，由于是第一个面，会很松，所以要注意手法，要轻、柔、慢，这样才不会造成破坏，不会让正在实验的你重来一遍哦）</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517160557777.png" alt="" style="zoom:67%;" />
+
+<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><h3 id="搭建第二层"><a href="#搭建第二层" class="headerlink" title="搭建第二层"></a>搭建第二层</h3><p>既然第一层到了，那第二层也不远了，来，我们继续。在第一层的基础上，直接将外部短件放上去，如组装底层一样，将第二层也给拼接完成。</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517155417348.png" alt="" style="zoom: 50%;" />
+
+
+
+<p>拼接完了之后会有些小凹槽，这里我就需要把核心件放进去，这里就不会放的很苦难了，因为这里已经搭建了两层，已经打好了基础，不会容易散架，而且也放的很简单，不会想搭建十字架时那样了。</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517155454838.png" alt="" style="zoom: 50%;" />
+
+<h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><h3 id="进行第三层的搭建"><a href="#进行第三层的搭建" class="headerlink" title="进行第三层的搭建"></a>进行第三层的搭建</h3><p>第一层和第二层都已经搭建好了，而且在里面，我们也将核心元件给都放进去了，核心元件的目的就是相当于一个制衡的作用，又来巩固外部件的，它能拢和起来，不让散架。第三层的操作手法其实与之前的也没有多大的区别，因此，快速填满，不用注意什么，简单一句，干就完了​​。</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517165347736.png" style="zoom:80%;" />
+
+<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><h3 id="对顶部的搭建"><a href="#对顶部的搭建" class="headerlink" title="对顶部的搭建"></a>对顶部的搭建</h3><p>顶部，对于小白给来说，最难了，在把核心元件放进去的时候，一直都是失败的，但有句话说的好哇：“失败乃是成功之母”。经过我不断的失败，我发现了一个小诀窍，在这里，我们不能用常规方法来塞进去，我们需要的是巧劲，先把核心元件的三个组合件先放进去一个小的垫底，一个中型的放进去，着两个是可以放进去的，最后也是最难的，在拿起一个小的核心元件慢慢的往里放，同时把最后一个可以活动的骨架往上拉起一点点，于是乎就能产生一个空间，这样就能塞进去了，如此进行四次就ok了,最后出来的就像下图一样了。</p>
+<p><img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517165154973.png"></p>
+<h2 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h2><h3 id="最后一层了，老话说封顶"><a href="#最后一层了，老话说封顶" class="headerlink" title="最后一层了，老话说封顶"></a>最后一层了，老话说封顶</h3><p>在进行封顶时，我们是有先后的，最先的是最后剩下的四个小外部元件，放上去后，第二个是将长件给放进去，最后是放入中件，但是在最后一个中件放进时，需要用一点点力气，强硬的塞进去，这样就将所有的元件给放进去了，而此时的四阶魔方也复原了哟。</p>
+<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517161343538.png" alt="" style="zoom:67%;" />
+
+
+
+<h6 id="最后给大家看看我们复原后的四阶魔方。"><a href="#最后给大家看看我们复原后的四阶魔方。" class="headerlink" title="最后给大家看看我们复原后的四阶魔方。"></a>最后给大家看看我们复原后的四阶魔方。</h6><p><img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517161259892.png"></p>
+<h6 id="是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。"><a href="#是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。" class="headerlink" title="是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。"></a>是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。</h6>]]></content>
+      <tags>
+        <tag>魔方</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/05/11/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -51,57 +97,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>四阶魔方原理（上）</title>
-    <url>/2021/05/15/%E5%9B%9B%E9%98%B6%E9%AD%94%E6%96%B9%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h2 id="魔方拆解复原"><a href="#魔方拆解复原" class="headerlink" title="魔方拆解复原"></a>魔方拆解复原</h2><h3 id="一、魔方拆解"><a href="#一、魔方拆解" class="headerlink" title="一、魔方拆解"></a>一、魔方拆解</h3><h3 id="拆解"><a href="#拆解" class="headerlink" title="拆解"></a>拆解</h3><h6 id="拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"><a href="#拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。" class="headerlink" title="拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。"></a>拆解就不用我教了吧，相信大家都会。方法就和拆解三阶魔方差不多，不要太用力，仔细点，慢慢卸下来就行了，就像这样。</h6><p><img src="https://gitee.com/xbaigei/sea/raw/master/img/1.jpg"></p>
-<p>在整理一下是吧，完美整洁才是王者：</p>
-<p><img src="https://gitee.com/xbaigei/sea/raw/master/img/2.jpg"></p>
-<h2 id="二、魔方复原"><a href="#二、魔方复原" class="headerlink" title="二、魔方复原"></a>二、魔方复原</h2><h5 id="魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s-go"><a href="#魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s-go" class="headerlink" title="魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s go!"></a>魔方坏了不要慌，先冷静思考，回想有没有掉东西，接着整理一遍，思路就来了，那么，你就离复原它就不远了。let’s go!</h5><h6 id="我将魔方分为核心件、中间件和外部件（短件，中件，长件）"><a href="#我将魔方分为核心件、中间件和外部件（短件，中件，长件）" class="headerlink" title="我将魔方分为核心件、中间件和外部件（短件，中件，长件）"></a>我将魔方分为核心件、中间件和外部件（短件，中件，长件）</h6><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><h6 id="搭建框架"><a href="#搭建框架" class="headerlink" title="搭建框架"></a>搭建框架</h6><p>先找出将核心骨架找到，并找出核心件，拼接方法如下：</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/3.png" style="zoom:25%;" />
-
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/4.jpg" style="zoom:80%;" />
-
-<p>以三阶魔方为基础的十字架模型来进行复原，所以我们需要进行第一步，用核心件在核心骨架上来拼接出一个十字架来：（注意，注意！！！这里一定要有耐心，因为这个骨架有些会很紧，有些却又很松，我们需要将轻、慢、柔的手法运用到极致，当然有些时候也需要使用一点点小暴力塞进去）</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/6.png" style="zoom:25%;" />
-
-<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><h6 id="搭建底部，俗称打地基"><a href="#搭建底部，俗称打地基" class="headerlink" title="搭建底部，俗称打地基"></a>搭建底部，俗称打地基</h6><p>在原有的十字骨架上进行累积、拼接并组装出一个地面出来，颜色不用在意，秉承着先搞完在优化的宗纸，这样才会更快更强，理解的更透彻。</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517160726742.png" alt="" style="zoom: 80%;" />
-
-
-
-<p>所以底面拼接就形成了（要注意，由于是第一个面，会很松，所以要注意手法，要轻、柔、慢，这样才不会造成破坏，不会让正在实验的你重来一遍哦）</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517160557777.png" alt="" style="zoom:67%;" />
-
-
-
-<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><h6 id="搭建第二层"><a href="#搭建第二层" class="headerlink" title="搭建第二层"></a>搭建第二层</h6><p>既然第一层到了，那第二层也不远了，来，我们继续。在第一层的基础上，直接将外部短件放上去，如组装底层一样，将第二层也给拼接完成。</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517155417348.png" alt="" style="zoom: 50%;" />
-
-
-
-<p>拼接完了之后会有些小凹槽，这里我就需要把核心件放进去，这里就不会放的很苦难了，因为这里已经搭建了两层，已经打好了基础，不会容易散架，而且也放的很简单，不会想搭建十字架时那样了。</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517155454838.png" alt="" style="zoom: 50%;" />
-
-
-
-<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><h6 id="进行第三层的搭建"><a href="#进行第三层的搭建" class="headerlink" title="进行第三层的搭建"></a>进行第三层的搭建</h6><p>第一层和第二层都已经搭建好了，而且在里面，我们也将核心元件给都放进去了，核心元件的目的就是相当于一个制衡的作用，又来巩固外部件的，它能拢和起来，不让散架。第三层的操作手法其实与之前的也没有多大的区别，因此，快速填满，不用注意什么，简单一句，干就完了​​。</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517165347736.png" style="zoom:80%;" />
-
-
-
-<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><h6 id="对顶部的搭建"><a href="#对顶部的搭建" class="headerlink" title="对顶部的搭建"></a>对顶部的搭建</h6><p>顶部，对于小白给来说，最难了，在把核心元件放进去的时候，一直都是失败的，但有句话说的好哇：“失败乃是成功之母”。经过我不断的失败，我发现了一个小诀窍，在这里，我们不能用常规方法来塞进去，我们需要的是巧劲，先把核心元件的三个组合件先放进去一个小的垫底，一个中型的放进去，着两个是可以放进去的，最后也是最难的，在拿起一个小的核心元件慢慢的往里放，同时把最后一个可以活动的骨架往上拉起一点点，于是乎就能产生一个空间，这样就能塞进去了，如此进行四次就ok了,最后出来的就像下图一样了。</p>
-<p><img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517165154973.png"></p>
-<h3 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h3><h6 id="最后一层了，老话说封顶"><a href="#最后一层了，老话说封顶" class="headerlink" title="最后一层了，老话说封顶"></a>最后一层了，老话说封顶</h6><p>在进行封顶时，我们是有先后的，最先的是最后剩下的四个小外部元件，放上去后，第二个是将长件给放进去，最后是放入中件，但是在最后一个中件放进时，需要用一点点力气，强硬的塞进去，这样就将所有的元件给放进去了，而此时的四阶魔方也复原了哟。</p>
-<img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517161343538.png" alt="" style="zoom:67%;" />
-
-
-
-<h6 id="最后给大家看看我们复原后的四阶魔方。"><a href="#最后给大家看看我们复原后的四阶魔方。" class="headerlink" title="最后给大家看看我们复原后的四阶魔方。"></a>最后给大家看看我们复原后的四阶魔方。</h6><p><img src="https://gitee.com/xbaigei/sea/raw/master/img/image-20210517161259892.png"></p>
-<h6 id="是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。"><a href="#是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。" class="headerlink" title="是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。"></a>是不是一模一样？当然，还没有将所有的颜色面恢复，不急，接下来就是四阶魔方的还原教程了。</h6>]]></content>
-      <tags>
-        <tag>魔方</tag>
-      </tags>
   </entry>
 </search>
