@@ -48,8 +48,12 @@
 <p>好的，由此我们也看见了通过在交换机SW1中通过SSH登入到路由器AR1就成功了！</p>
 <p>开心！</p>
 ]]></content>
+      <categories>
+        <category>路由与交换</category>
+      </categories>
       <tags>
-        <tag>telnet和ssh</tag>
+        <tag>telnet</tag>
+        <tag>ssh</tag>
       </tags>
   </entry>
   <entry>
